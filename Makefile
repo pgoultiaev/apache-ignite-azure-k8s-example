@@ -66,6 +66,12 @@ azure-delete-cluster:
 	--no-wait \
 	--yes
 
+azure-delete-resourcegroup:
+	az group delete \
+	--name $(RESOURCE_GROUP) \
+	--no-wait \
+	--yes
+
 
 # Java project shortcuts
 build:
